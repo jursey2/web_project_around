@@ -2,12 +2,12 @@ let content = document.querySelector(".content");
 let profileName = content.querySelector(".profile__name");
 let profileDescription = content.querySelector(".profile__description");
 let profileEditPopup = document.querySelector (".popup");
-let profileEditForm = profileEditPopup.querySelector(".popup__container__form");
+let profileEditForm = profileEditPopup.querySelector(".popup__form");
 let profileEditButton = content.querySelector(".profile__button-edit");
-let profileEditCloseButton = profileEditPopup.querySelector(".popup__button__close");
-let profileEditInputName = profileEditPopup.querySelector(".popup__container__form_name");
-let profileEditInputAbout = profileEditPopup.querySelector(".popup__container__form_about");
-let likeButtons = content.querySelectorAll(".button_heart");
+let profileEditCloseButton = profileEditPopup.querySelector(".popup__button-close");
+let profileEditInputName = profileEditPopup.querySelector(".popup__form-name");
+let profileEditInputAbout = profileEditPopup.querySelector(".popup__form-about");
+let likeButtons = content.querySelectorAll(".gallery__button-heart");
 
 function openPopup (popup){
     popup.classList.add("popup__show")
@@ -39,15 +39,15 @@ document.addEventListener("keydown", (evt)=>{
 })
 
 function heartLiked (heart){
-    heart.classList.add("button_heart__liked")
+    heart.classList.add("gallery__button-heart_liked")
 }
 
 function heartDisliked (heart){
-    heart.classList.remove("button_heart__liked")
+    heart.classList.remove("gallery__button-heart_liked")
 }
 
 likeButtons.forEach((button)=>{
     button.addEventListener("click",()=>{
-        button.classList.toggle("button_heart__liked")
+        button.classList.toggle("gallery__button-heart_liked")
     })
 })

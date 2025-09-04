@@ -35,7 +35,7 @@
     text-overflow: ellipsis;
     display: block;
 }
-.button_heart{
+.gallery__button-heart{
     position: relative;
     background-image: url(../images/Heart-deactivated.svg);
     background-color: transparent;
@@ -46,10 +46,10 @@
     height: 19px;
     flex-shrink: 0;
 }
-.button_heart:hover{
+.gallery__button-heart:hover{
     background-image: url(../images/Heart-hover.svg);
 }
-.button_heart__liked{
+.gallery__button-heart_liked{
     position: relative;
     background-image: url(../images/Heart-liked.svg);
     background-color: transparent;
@@ -60,7 +60,7 @@
     height: 19px;
     flex-shrink: 0; 
 }
-.button_heart__liked:hover{
+.gallery__button-heart_liked:hover{
     position: relative;
     background-image: url(../images/Heart-liked.svg);
     background-color: transparent;

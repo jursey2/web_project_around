@@ -26,7 +26,7 @@
     border-radius: 10px;
     position: relative;
 }
-.popup__container__title{
+.popup__container-title{
     color: #000;
     font-family: "Inter-black", sans-serif;
     font-size: 24px;
@@ -34,7 +34,7 @@
     width: 330px;
     margin: 36px auto 0 36px;
 }
-.popup__container__form{
+.popup__form{
     display: flex;
     flex-direction: column;
     width: 358px;
@@ -43,31 +43,31 @@
     font-family: "Inter-regular", sans-serif;
     color: #C4C4C4;
 }
-.popup__container__form_name{
+.popup__form-name{
     width: 100%;
     height: 27px;
     border: none;
     border-bottom: 1px solid #C4C4C4;
     font-size: 14px;
 }
-.popup__container__form_name::placeholder{
+.popup__form-name::placeholder{
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.popup__container__form_about{
+.popup__form-about{
     width: 100%;
     height: 27px;
     border: none;
     border-bottom: 1px solid #C4C4C4;
     font-size: 14px;
 }
-.popup__container__form_about::placeholder{
+.popup__form-about::placeholder{
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.popup__button__save{
+.popup__button-save{
     width: 100%;
     height: 50px;
     margin: 18px auto 50px;
@@ -79,7 +79,7 @@
     border-radius: 2px;
     cursor: pointer;
 }
-.popup__button__save-active{
+.popup__button-save_active{
     width: 100%;
     height: 50px;
     margin: 18px auto 50px;
@@ -88,10 +88,10 @@
     border-radius: 2px;
     cursor: pointer;
 }
-.popup__button__save-active:hover{
+.popup__button-save_active:hover{
     opacity: 80%;
 }
-.popup__button__close{
+.popup__button-close{
     position: absolute;
     cursor: pointer;
     background-image: url(../images/Close-Icon.png);
@@ -103,7 +103,7 @@
     right: -38px;
     top: -38px;
 }
-.popup__button__close:hover{
+.popup__button-close:hover{
     opacity: 60%;
 }
 @media screen and (min-width: 320px) and (max-width: 585px){
@@ -111,26 +111,26 @@
         width: 282px;
         height: 322px;
     }
-    .popup__container__title{
+    .popup__container-title{
         width: 238px;
         font-size: 18px;
         margin: 25px auto 0 22px;
     }
-    .popup__container__form{
+    .popup__form{
         width: 238px;
         margin: 76px 22px 0;
     }
-    .popup__button__save{
+    .popup__button-save{
         width: 238px;
         height: 46px;
         margin: 16px auto 25px;
     }
-    .popup__button__save-active{        
+    .popup__button-save_active{        
         width: 238px;
         height: 46px;
         margin: 16px auto 25px; 
     }
-    .popup__button__close{
+    .popup__button-close{
         width: 26px;
         height: 26px;
         top: -50;
@@ -141,19 +141,19 @@
     .popup__container{
         width: 350px;
     }
-    .popup__container__title{
+    .popup__container-title{
         width: 270px;
     }
-    .popup__container__form{
+    .popup__form{
         width: 270px;
     }
-    .popup__button__save{
+    .popup__button-save{
         width: 270px;
     }
-    .popup__button__save-active{
+    .popup__button-save_active{
         width: 270px;
     }
-    .popup__button__close{
+    .popup__button-close{
         width: 30px;
         height: 30px;
         top: -30px;
