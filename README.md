@@ -2,7 +2,7 @@
 
 https://jursey2.github.io/web_project_around/
 
-# Proyecto 5: Galeria de arte de TripleTen
+# Proyecto 7: Alrededor de los EE.UU
 
 Este proyecto busca crear un espacio para compartir e interactuar con algunos post, con el fin de poner en practica funciones interactivas y un diseño repsonsivo
 
