@@ -6,6 +6,7 @@
     grid-gap: 20px 17px;
 }
 .gallery__frame{
+    position: relative;
     width: 282px;
     height: 361px;
     background-color: #fff;
@@ -49,7 +50,7 @@
 .gallery__button-heart:hover{
     background-image: url(../images/Heart-hover.svg);
 }
-.gallery__button-heart_liked{
+.gallery__button-heart.gallery__button-heart_liked{
     position: relative;
     background-image: url(../images/Heart-liked.svg);
     background-color: transparent;
@@ -60,7 +61,7 @@
     height: 19px;
     flex-shrink: 0; 
 }
-.gallery__button-heart_liked:hover{
+.gallery__button-heart.gallery__button-heart_liked:hover{
     position: relative;
     background-image: url(../images/Heart-liked.svg);
     background-color: transparent;
@@ -71,6 +72,24 @@
     height: 19px;
     flex-shrink: 0; 
 }
+.gallery__button-delete{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    width: 18px;
+    height: 19px;
+    background-image: url(../images/Trash.svg);
+    background-size: contain;
+    background-repeat: repeat;
+    cursor: pointer;
+}
+.gallery__button-delete:hover{
+    background-image: url(../images/Trash-hover.svg);
+    opacity: 60%;
+}
+
 @media screen and (min-width: 320px) and (max-width: 585px){
     .gallery{
         display: grid;

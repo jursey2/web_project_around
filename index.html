@@ -32,62 +32,43 @@
                 </button>
             </section>
             <section class="gallery">
-                <div class="gallery__frame">
-                    <img src="./images/Valle-yosemite.png" alt="Imagen del Valle Yosemite" class="gallery__image">
-                    <div class="gallery__footer">
-                        <p class="gallery__text">Valle de Yosemite</p>
-                        <button type="button" class="gallery__button-heart"></button>
-                    </div>
-                </div>
-                 <div class="gallery__frame">
-                    <img src="./images/Lago-louise.png" alt="Imagen de Lago Louise" class="gallery__image">
-                    <div class="gallery__footer">
-                        <p class="gallery__text">Lago Louise</p>
-                        <button type="button" class="gallery__button-heart"></button>
-                    </div>
-                </div>
-                 <div class="gallery__frame">
-                    <img src="./images/Montanas-cavas.png" alt="Imagen de Montañas Calvas" class="gallery__image">
-                    <div class="gallery__footer">
-                        <p class="gallery__text">Montañas Calvas</p>
-                        <button type="button" class="gallery__button-heart"></button>
-                    </div>
-                </div>
-                 <div class="gallery__frame">
-                    <img src="./images/Latemar.png" alt="Imagen de Latemar" class="gallery__image">
-                    <div class="gallery__footer">
-                        <p class="gallery__text">Latemar</p>
-                        <button type="button" class="gallery__button-heart"></button>
-                    </div>
-                </div>
-                 <div class="gallery__frame">
-                    <img src="./images/Vanois.png" alt="Imagen del Parque Nacional Vanois" class="gallery__image">
-                    <div class="gallery__footer">
-                        <p class="gallery__text">Vanois National Park</p>
-                        <button type="button" class="gallery__button-heart"></button>
-                    </div>
-                </div>
-                 <div class="gallery__frame">
-                    <img src="./images/Lago-braies.png" alt="Imagen del Lago di Braies" class="gallery__image">
-                    <div class="gallery__footer">
-                        <p class="gallery__text">Lago di Braies</p>
-                        <button type="button" class="gallery__button-heart"></button>
-                    </div>
-                </div>
+                
             </section>    
         </main>
         <footer class="footer">
             <p class="footer__copyright">© 2025. Juan Camacho</p>
         </footer>
-        <div class="popup">
-            <div class="popup__container">
-                <h2 class="popup__container-title">Editar perfil</h2>
-                <form class="popup__form">
-                    <input type="text" name="name" placeholder="Nombre" class="popup__form-name">
-                    <input type="text" name="acerca" placeholder="Acerca de mi" class="popup__form-about">
-                    <button type="submit" class="popup__button-save">Guardar</button>
+        <div class="popup popup__edit">
+            <div class="popup__content">
+                <h2 class="popup__content-title">Editar perfil</h2>
+                <form class="popup__form popup__form-edit">
+                    <input type="text" class="popup__input popup__input-name" name="name" placeholder="Nombre" minlength="2" maxlength="40" required>
+                    <span class="popup__error"></span>
+                    <input type="text" class="popup__input popup__input-about " name="acerca" placeholder="Acerca de mi" minlength="2" maxlength="40" required>
+                    <span class="popup__error"></span>   
+                    <button type="submit" class="popup__button popup__button-save popup__button-disabled">Guardar</button>
                 </form>
                 <button type="submit" class="popup__button-close"></button>
+            </div>
+        </div>
+        <div class="popup popup__add">
+             <div class="popup__content">
+                <h2 class="popup__content-title">Nuevo Lugar</h2>
+                <form class="popup__form popup__form-add">
+                    <input type="text" class="popup__input popup__input-title" name="title" placeholder="Titulo" minlength="2" maxlength="40" required>
+                    <span class="popup__error"></span>
+                    <input type="url" class="popup__input popup__input-link" name="link" placeholder="Enlace de la imagen" required>
+                    <span class="popup__error"></span>   
+                    <button type="submit" class="popup__button popup__button-save popup__button-disabled">Crear</button>
+                </form>
+                <button type="button" class="popup__button-close"></button>
+            </div>
+        </div>
+        <div class="popup popup__image">
+            <div class="popup__content popup__content-image">
+                <button type="submit" class="popup__button-close"></button>
+                <img src alt class="popup__picture">
+                <p class="popup__caption"></p>
             </div>
         </div>
     </div>
