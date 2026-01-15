@@ -1,3 +1,5 @@
+import {enableValidation} from "./validate.js";
+
 const initialCards = [
   { name: "Valle de Yosemite", link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/yosemite.jpg"},
   { name: "Lago Louise", link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/lake-louise.jpg"},
@@ -133,3 +135,18 @@ document.addEventListener("keydown", (evt)=>{
     }
 });
 
+document.addEventListener("keydown", (evt)=>{
+    if(evt.key == "Escape"){
+        closePopup(addCardPopup)
+    }
+});
+
+enableValidation({
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__button",
+  inactiveButtonClass: "popup__button_disabled",
+  inputErrorClass: "popup__input_type_error",
+  errorClass: "popup__error_visible"
+});
+ 
